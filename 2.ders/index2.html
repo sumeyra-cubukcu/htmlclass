@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>baslik</title> <!--adres baslığı diyebiliriz yani server sekmesinde 
+            IP şeklinde adresi değil title a yazdığımızı gösterir-->
+    </head>
+    <meta charset="UTF-8"> <!--burada UTF-8 ile bazı türkce kavramların kullanacağını belirtmiş olduk,
+    meta bazı özellikleri barındırır charset gibi -->
+
+    <meta name="keywords" content="HTML,CSS,Javascript"> 
+    <meta name="description" contect="free web tutorial"> 
+    <!-- yukarıda sitemizin ücretsiz şekilde web bilgisi verdiğini belirtmiş olduk -->
+    <meta name="author" content="Sebahattin Ali">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- yukarıda kullanılan cihaza göre genisliği eşitle dedik yani bu bir telefonsa ona uygun genişlik uygula -->
+    <!-- initial-scale=1.0 zoom boyutu 1.0 normal boyut -->
+    <body>
+        <!-- HTML block/inline -->
+        <!-- block -->
+        <p style="border: 1px solid black">Lorem </p>
+
+        <div style="border: 1px solid black">Division</div>
+
+        <h1 style="border: 1px solid black">baslik</h1>
+
+        <!-- inline -->
+        <a style="border: 1px solid black" href="http://google.com">google linki</a>
+
+        <b>kalın kelime</b>
+        <span>düz bir kelime</span>
+        <p>bu bir paragraftır</p>
+
+         <!-- HTML Entities -->
+         <h3>Entity Name - Entity Number</h3>
+
+         <h3>&lt; &#60;</h3>
+         <h3>&lt; </h3>&#60;
+         <h3>&gt; &#62;</h3>
+         <h3>&copy; &#169;</h3>
+         <h3>&#65; &#66; &#67;</h3>
+         <h3>&#128512;</h3>
+         <h3>&#128513;</h3>
+        
+         <!-- HTML FORMS -->
+         <form>
+            <label for="fname"> First Name:</label>
+            <input type="text" id="fname"  name="fname"> <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+
+         </form>
+         <form>
+            <input type="radio" id="html" name="language" value="HTML"> 
+            <label for="html">HTML</label> <br>
+            <input type="radio" id="css" name="language" value="CSS ">
+            <label for="css">CSS</label> <br>
+            <input type="radio" id="Javascript" name="language" value="Javascript" >
+            <label for="Javascript">Javascript</label>
+
+<!-- burada value eklediğimizde hepsini işaretleyebildiğimizi görürüz , 
+    value değerinin yanında aynı name bilgisi girdiğimizde ise sadece 
+    bir tanesini işaretleyebildiğimizi görebiliriz,seceneklerden bir tanesini
+     secmek için radio butonunu kullanırız.-->
+  </form>
+  <form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+  <label for="vehicle1">I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+  <label for="vehicle2">I have a car</label>
+<!-- checkbox tıklayıp geri alma -->
+   <input type="submit" value="Submit">
+   <input type="submit" value="Lütfen Tıklayınız">
+  </form>
+
+  <form>
+    <label> Choose a car;</label>
+    <select size="2" multiple> <!-- size =2 de 2 secenek gösterir ,
+        multiple  birden fazla secim yapma-->
+        <option value="volvo"> Volvo </option>
+        <option value="fiat"> Fiat</option>
+        <option value="mercedes"> Mercedes </option>
+    </select>
+ </form>
+
+ <form>
+    <textarea rows="10" cols="30"> Lütfen burayı doldurunuz!</textarea>
+    <button type="button" onclick="alert('Hello world')">Click Me!</button>
+ </form>
+
+ <form>
+    <fieldset>
+        <legend>Personel</legend>
+        <label>First Name</label>
+        <input type="text"> <br>
+        <label>Last Name</label>
+        <input type="text>"
+
+    </fieldset>
+ </form>
+
+ <form>
+    <h2>Datalist Element</h2>
+    <input list="browsers" name="browser">
+    
+    <datalist id="browsers">
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Safari</option>
+        <!-- burada hem secenekleri secebiliriz
+         hemde secenekler dısındaki veriyi girebiliriz -->
+
+    </datalist>
+
+
+
+ </form>
+
+            <!-- INPUT TYPES -->
+            <form>
+                <h3>Input Types</h3>
+                <br>
+                <label>Enter Password</label>
+                <input type="password"><br>
+          <!-- şifre girisinde karakterleri göstermez  -->
+
+              <label>Select Your Favorite Color:</label>
+              <input type="color"> <br>
+              <label>Birthday:</label>
+              <input type="date"><br>
+              
+              <label>Enter date before 2023-12-31; and after 2022-12-31;</label>
+              <input type="date" max="2023-12-31" min="2022-12-31">
+             
+
+              <form>
+                <input type="email">
+                <input type="submit" value="submit">
+              </form>
+             
+              <input type="image" src="../metaworld_360.jpg"> <br>
+              <label>Select a file:</label>
+              <input type="file">
+            </form>
+
+    </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en"> html dili
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+   
